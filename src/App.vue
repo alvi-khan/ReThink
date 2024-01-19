@@ -15,7 +15,11 @@ export default {
 <template>
   <header class="flex text-base justify-between items-center">
     <RouterLink to="/" class="hover:bg-transparent">
-      <img alt="logo of ReThink Limited" src="./assets/images/ReThink-Logo.svg" class="w-40 md:w-48" />
+      <img
+        alt="logo of ReThink Limited"
+        src="./assets/images/ReThink-Logo.svg"
+        class="w-40 md:w-48"
+      />
     </RouterLink>
     <button aria-label="Open Menu" class="md:hidden text-2xl mr-4" @click="sidebarShown = true">
       <font-awesome-icon icon="fa-solid fa-bars" />
@@ -140,7 +144,6 @@ export default {
 </template>
 
 <style scoped>
-
 .footer {
   max-width: 1200px;
   margin: 0 auto;

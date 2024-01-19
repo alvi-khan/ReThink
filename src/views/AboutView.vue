@@ -27,7 +27,7 @@ import { goTo, ROUTES } from '@/helpers/utils'
       </div>
       <button
         aria-label="Our Services"
-        class="w-48 mx-auto text-lg capitalize bg-green-2 text-white px-10 py-5 rounded-xl transition-transform hover:scale-105"
+        class="self-center text-lg capitalize bg-green-2 text-white px-10 py-5 rounded-xl transition-transform hover:scale-105"
         style="box-shadow: -6px 8px 8px -4px grey"
         @click="goTo(ROUTES.SERVICES)"
       >

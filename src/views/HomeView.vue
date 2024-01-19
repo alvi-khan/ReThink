@@ -1,6 +1,7 @@
 <script setup>
 import data from '../assets/data.json'
 import { goTo, ROUTES } from '@/helpers/utils'
+import ImageSlider from '@/assets/components/ImageSlider.vue'
 </script>
 
 <template>
@@ -145,7 +146,8 @@ import { goTo, ROUTES } from '@/helpers/utils'
 
   <div class="flex flex-col text-center my-20">
     <span class="text-4xl">Our Clients</span>
-    <div class="h-28 sm:h-36 lg:h-40 flex justify-around items-center text-white gap-4 mt-4">
+    <ImageSlider class="sm:hidden" />
+    <div class="hidden sm:flex h-36 lg:h-40 justify-around items-center text-white gap-4 mt-4">
       <img
         alt="logo of Berger"
         src="../assets/images/berger.svg"
