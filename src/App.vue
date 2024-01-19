@@ -15,12 +15,12 @@ export default {
 <template>
   <header class="flex text-base justify-between items-center">
     <RouterLink to="/" class="hover:bg-transparent">
-      <img alt="logo of ReThink Limited" src="./assets/images/ReThink-Logo.svg" class="w-48" />
+      <img alt="logo of ReThink Limited" src="./assets/images/ReThink-Logo.svg" class="w-40 md:w-48" />
     </RouterLink>
     <button aria-label="Open Menu" class="md:hidden text-2xl mr-4" @click="sidebarShown = true">
       <font-awesome-icon icon="fa-solid fa-bars" />
     </button>
-    <nav class="hidden flex-1 md:flex justify-end items-center">
+    <nav class="hidden flex-1 md:flex md:gap-1 justify-end items-center">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
       <RouterLink to="/services">Services</RouterLink>
@@ -140,9 +140,6 @@ export default {
 </template>
 
 <style scoped>
-header {
-  height: 5rem;
-}
 
 .footer {
   max-width: 1200px;
@@ -156,13 +153,14 @@ nav {
 
 nav a {
   display: inline-block;
-  padding: 1rem 0;
   border-radius: 0.75rem;
-}
-
-nav a {
   color: var(--green-1);
   padding: 0.25rem 1rem;
+}
+
+nav a.router-link-exact-active {
+  color: var(--green-1);
+  background-color: var(--green-4);
 }
 
 nav.sidebar a {
@@ -171,53 +169,9 @@ nav.sidebar a {
   margin: 0 1rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--green-1);
-}
-
 nav.sidebar a.router-link-exact-active {
   color: var(--green-1);
   background-color: var(--green-bg);
   border-radius: 0.75rem;
-}
-
-@media (min-width: 768px) {
-  header {
-    display: flex;
-    place-items: center;
-  }
-
-  header .wrapper {
-    width: 100%;
-    display: flex;
-    place-items: flex-end;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    padding: 1rem 0;
-  }
-
-  nav a {
-    margin: 0 0.25rem;
-    border-radius: 0.75rem;
-  }
-
-  nav a.router-link-exact-active {
-    color: var(--green-1);
-    background-color: var(--green-4);
-    padding: 0.25rem 1rem;
-  }
-
-  nav a.router-link-exact-active:hover {
-    padding: 0.25rem 1rem;
-  }
-
-  nav.sidebar a.router-link-exact-active {
-    color: var(--green-1);
-    background-color: var(--green-bg);
-    border-radius: 0.75rem;
-  }
 }
 </style>
