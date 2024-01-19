@@ -145,17 +145,17 @@ import { goTo, ROUTES } from '@/helpers/utils'
 
   <div class="flex flex-col text-center my-20">
     <span class="text-4xl">Our Clients</span>
-    <div class="flex justify-around items-center text-white gap-4 mt-4">
+    <div class="h-28 sm:h-36 lg:h-40 flex justify-around items-center text-white gap-4 mt-4">
       <img
         alt="logo of Berger"
         src="../assets/images/berger.svg"
-        class="w-2/3 md:w-1/3"
+        class="h-full w-2/3 md:w-1/3"
         loading="lazy"
       />
       <img
         alt="logo of CavinKare"
-        src="../assets/images/CavinKare.webp"
-        class="w-2/3 md:w-1/3"
+        src="../assets/images/CavinKare.svg"
+        class="h-full w-2/3 md:w-1/3"
         loading="lazy"
       />
     </div>

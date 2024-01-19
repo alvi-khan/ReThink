@@ -14,8 +14,7 @@ import { goTo, ROUTES } from '@/helpers/utils'
     </span>
     <div class="hidden lg:inline" />
     <div class="flex flex-col gap-10 col-start-1 row-span-2">
-      <span class="text-md leading-relaxed">{{ data.about.history[0] }}</span>
-      <span class="text-md leading-relaxed">{{ data.about.history[1] }}</span>
+      <span v-html="data.about.history" class="text-md leading-relaxed"></span>
     </div>
     <div class="flex flex-col gap-24 row-span-2">
       <div class="overflow-hidden h-72 hidden md:inline">

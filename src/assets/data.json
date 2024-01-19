@@ -8,7 +8,7 @@
   "facebook": "https://www.facebook.com/ReThinkLtdBd/",
   "linkedin": "https://bo.linkedin.com/company/rethinkbdltd",
   "home": {
-    "title": "Leading outsourcing company for HR, Administrative, Safety & Security, and Expatriate Management",
+    "title": "Leading outsourcing company for HRIS, Administrative, Safety & Security, and Expatriate Management",
     "highlights": [
       {
         "icon": "fa-solid fa-computer",
@@ -71,10 +71,7 @@
   },
   "about": {
     "heading": "ReThink Ltd. is established with a vision to give unique service solutions to businesses.",
-    "history": [
-      "The company was established in 2017 with an understanding to give their esteemed clients a service solution which will be unique so that the clients can rely for any of its service requirements and consider ReThink Ltd as a dependable business partner. ReThink Ltd moral is to give service as per the company vision - solutions, Never before. Our team has over 2 decades of experience in working with brand names like YKK Bangladesh Pvt. Ltd., Airtel BD. Ltd, Warid Telecom, Seibu Electric Japan, etc. We have a long history of providing safe, reliable, quality service in the fields of HR service, payroll service and activity outsource service, expatriate management service, safety & security solution, IT support, general support service, facility & logistic service, as well as training services.",
-      "We are capable of giving 360 degree services that will make your business smoother, more efficient and easier to operate while we worry about the tedious everyday details. We can also accommodate special needs for your business which we may not be offering yet. Please send us an email us (Info@rethinkltd.com) or fill up the contact form in the contacts tab; we would love to get back to you."
-    ],
+    "history": "The company was established in 2017 with an understanding to give their esteemed clients a service solution which will be unique so that the clients can rely for any of its service requirements and consider ReThink Ltd as a dependable business partner. ReThink Ltd moral is to give service as per the company vision - <span class='font-bold'>Solutions, Never before</span>. <br/><br/> Our team has over 2 decades of experience in working with brand names like YKK Bangladesh Pvt. Ltd., Airtel BD. Ltd, Warid Telecom, Seibu Electric Japan, etc. We have a long history of providing safe, reliable, quality service in the fields of HRIS service, payroll service and activity outsource service, expatriate management service, safety & security solution, IT support, general support service, facility & logistic service, as well as training services. <br/><br/> We are capable of giving 360 degree services that will make your business smoother, more efficient and easier to operate while we worry about the tedious everyday details. We can also accommodate special needs for your business which we may not be offering yet. Please send us an email us (<a style='text-decoration: underline' class='hover:bg-transparent text-green-1' href='mailto:info@rethinkltd.com'>info@rethinkltd.com</a>) or fill up the contact form in the contacts tab; we would love to get back to you.",
     "services": [
       {
         "icon": "fa-regular fa-comments",

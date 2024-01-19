@@ -15,7 +15,7 @@ export default {
 <template>
   <header class="flex text-base justify-between items-center">
     <RouterLink to="/" class="hover:bg-transparent">
-      <img alt="logo of ReThink Limited" src="./assets/images/ReThink-Logo.svg" class="w-40" />
+      <img alt="logo of ReThink Limited" src="./assets/images/ReThink-Logo.svg" class="w-48" />
     </RouterLink>
     <button aria-label="Open Menu" class="md:hidden text-2xl mr-4" @click="sidebarShown = true">
       <font-awesome-icon icon="fa-solid fa-bars" />
@@ -27,7 +27,8 @@ export default {
       <RouterLink to="/contact">Contact</RouterLink>
       <a
         aria-label="Get Quote"
-        :onclick="`window.open('mailto:${data.email}')`"
+        :href="`mailto:${data.email}`"
+        target="_blank"
         style="cursor: pointer"
       >
         Get Quote
@@ -149,13 +150,14 @@ header {
   padding: 0 2rem;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
 nav {
   text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 1rem 0;
+  border-radius: 0.75rem;
 }
 
 nav a {
@@ -169,17 +171,8 @@ nav.sidebar a {
   margin: 0 1rem;
 }
 
-nav a:hover {
-  border-radius: 0.75rem;
-  padding: 0.25rem 1rem;
-}
-
 nav a.router-link-exact-active {
   color: var(--green-1);
-}
-
-nav a.router-link-exact-active:hover {
-  padding: 0.25rem 1rem;
 }
 
 nav.sidebar a.router-link-exact-active {
@@ -188,19 +181,10 @@ nav.sidebar a.router-link-exact-active {
   border-radius: 0.75rem;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-}
-
 @media (min-width: 768px) {
   header {
     display: flex;
     place-items: center;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
   }
 
   header .wrapper {
